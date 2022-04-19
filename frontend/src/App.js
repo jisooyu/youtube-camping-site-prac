@@ -25,15 +25,16 @@ function App() {
               <Route path='/new-camp' element={<NewCamp />} />
             </Route>
           </Routes>
+
+          <Routes>
+            <Route path='/camps' element={<PrivateRoute />}>
+              <Route path='/camps' element={<Camps />} />
+            </Route>
+            <Route path='/camp/:campId' element={<PrivateRoute />}>
+              <Route path='/camp/:campId' element={<Camp />} />
+            </Route>
+          </Routes>
         </div>
-        <Routes>
-          <Route path='/camps' element={<PrivateRoute />}>
-            <Route path='/camps' element={<Camps />} />
-          </Route>
-          <Route path='/camp/:campId' element={<PrivateRoute />}>
-            <Route path='/camp/:campId' element={<Camp />} />
-          </Route>
-        </Routes>
       </Router>
       <ToastContainer />
     </>

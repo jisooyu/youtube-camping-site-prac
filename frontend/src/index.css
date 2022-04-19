@@ -215,10 +215,13 @@ h3 {
   font-size: 1.3rem;
 }
 
+.camp-header{
+  text-align: center;
+}
 /* .camp, */
-.camp-headings {
+.camp-displaying {
   display: grid;
-  grid-template-columns:repeat(3 , 1fr);
+  grid-template-columns:repeat(2 );
   font-size: x-large;
   font-weight: 700;
   gap: 10px;
@@ -226,7 +229,7 @@ h3 {
   text-align: center;
 } 
 
-.campImage{
+.camp-image{
   height: 1000px;
   width: 1000px; 
 }
