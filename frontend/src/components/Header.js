@@ -22,23 +22,27 @@ const Header = () => {
       <ul>
         {user ? (
           <li>
-            <div className='btn' onClick={onLogout}>
+            <div className='btn-reverse' onClick={onLogout}>
               <FaSignOutAlt /> 로그아웃
             </div>
           </li>
         ) : (
           <>
             <li>
-              <Link to='/login'>
-                <FaSignInAlt />
-                로그인
-              </Link>
+              <div className='btn-block'>
+                <Link to='/login'>
+                  <FaSignInAlt />
+                  로그인
+                </Link>
+              </div>
             </li>
             <li>
-              <Link to='/register'>
-                <FaUser />
-                신규멤버등록
-              </Link>
+              <div className='btn-block'>
+                <Link to='/register'>
+                  <FaUser />
+                  신규멤버등록
+                </Link>
+              </div>
             </li>
           </>
         )}

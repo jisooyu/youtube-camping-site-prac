@@ -35,12 +35,10 @@ function Camps() {
       <div className='camp-header'>
         <h1> 캠핑사이트 정보</h1>
       </div>
-      <div className='camp-displaying'>
-        <ul>
-          {camps.map((camp) => (
-            <Camp key={camp._id} {...camp} />
-          ))}
-        </ul>
+      <div>
+        {camps.map((camp) => (
+          <Camp key={camp._id} {...camp} />
+        ))}
       </div>
     </>
   );
